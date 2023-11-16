@@ -67,7 +67,17 @@ public class Product {
 	@Column
 	private double price;
 	
+	private String type;
 	
+	
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
 	@ManyToOne
 	@JoinColumn(name = "measure_unit_id")
 	private MeasureUnit measureUnit;
